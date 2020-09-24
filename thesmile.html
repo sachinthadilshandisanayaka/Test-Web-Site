@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thesmile.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="navigation">
+        <img src="images/logo-small.png" alt="" srcset="">
+        <ul type="none">
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="fa fa-envelope icon"></i> Contact us</a>
+            </li>
+            <li>
+                <a href="theflorist.html"><i class="fa fa-folder-open" aria-hidden="true"></i> The florist</a>
+            </li>
+            <li>
+                <a href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i> Gallery</a>
+            </li>
+            <li>
+                <a href="order.html"><i class="fa fa-cogs" aria-hidden="true"></i> How to oder</a>
+            </li>
+            <li>
+                <a href="orderbyphone.html"><i class="fa fa-phone" aria-hidden="true"></i> Order by phone</a>
+            </li>
+            <li>
+                <a href="chat.html"><i class="fa fa-comment" aria-hidden="true"></i> Chat</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Body">
+
+        <section class="right">
+
+            <section class="about">
+                <h1>The Smile</h1>
+                <p>Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                    for every occasion. Conveys joy</p> <br>
+                    <i>
+                        Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                        chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
+                        arrangement.
+                    </i>
+            </section>
+            <hr>
+            <section class="form">
+                <form action="" method="POST">
+                    <label for="deliveryData">Delivery Date</label>
+                    <input type="date" name="date" id="" required><br>
+
+                    <label for="deliveryTime">Delivery Time</label><br>
+                    <input type="radio" name="time" id="" value="week" required><label for="time">WorkingDay-Free(9 a.m - 9 p.m)</label><br>
+                    <input type="radio" name="time" id="" value="holiday" required><label for="time">Sunday and public holidaya 4 <span>&euro;</span></label>
+                    <br>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" name="quantity" id="" required>
+                   <br>
+
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="" cols="30" rows="10" required></textarea><br>
+                    <small>250 characters remaining</small>
+                    <br>
+                    <label for="signature">Signature</label>
+                    <input type="text" name="signature" id="">
+                    <br>
+                    <button type="submit">Continue >></button>
+
+                </form>
+            </section>
+        </section>
+
+        <section class="left">
+            
+            <section class="image">
+                <img src="images/the smile.jpg" alt="" srcset="">
+            </section>
+
+            <section class="price-delivary">
+                <p>Price (delivery included)</p>
+                <hr>
+                <form action="">
+                    <div>
+                        <input type="radio" name="price" id="" onclick="fn(this)" value="78.90 "><label for="standar">Standard 78.90 <span>&euro;</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="price" id="" onclick="fn(this)"  value="98.90 "><label for="Deluxe">Deluxe 98.90 <span>&euro;</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="price" id="" onclick="fn(this)"  value="118.90 "><label for="premium">Premium 118.90 <span>&euro;</span></label>
+                    </div>
+                </form>
+
+                <p id="show-select-1"></p>
+                <p id="show-select-2"></p>
+            </section>
+
+        </section>
+    </section>
+    <script>
+        function fn(event){
+            document.getElementById("show-select-1").innerHTML = "Total: "+event.value+"<span>&euro;</span>(delivery include)";
+            document.getElementById("show-select-2").innerHTML = "The smile "+event.value+"<span>&euro;</span>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background-color: #34495E;
+}
+.navigation{
+    background-color: #F1948A;
+    position: relative;
+    box-shadow: 1px 2px 5px black;
+    position: sticky;
+    top: 0;
+    margin-bottom: 0;
+    z-index: 99;
+}
+.navigation img{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.navigation img, ul{
+    display: inline;
+}
+.navigation ul{
+    position: absolute;  
+    list-style: none;
+    margin-left: 30%;
+}
+.navigation li{
+    display: inline;
+    margin-left: 10px;
+}
+.navigation li a {
+    text-decoration: none;
+    color: #641E16;
+    padding:5px;
+}
+.navigation li a:hover{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.Body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 800px;
+}
+.about h1{
+    font-size: xx-large;
+    font-family: Segoe Print;
+}
+.right{
+    float: right;
+    width: 50%;
+}
+.right form{
+    padding: 10px;
+}
+.about p{
+font-family: Tahoma;
+}
+.right form input,textarea{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+    margin-left: 50%;
+    border: none;
+    background-color: #641E16;
+    color: white;
+    
+    padding: 10px;
+}
+button:hover{
+    box-shadow: 1px 2px 5px black;
+}
+.left .image{
+    /* margin-top: 20px; */
+    width: 500px;
+}
+.left .image img{
+    margin-top: 20px;
+    width: 100%;
+}
+.price-delivary{
+    margin-left: 20px;
+}
+.price-delivary div{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+}
+#show-select-1{
+    margin-left: 20px;
+    background-color: #641E16;
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+#show-select-2{
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+    width: 300px;
+    text-align: center;
+}
